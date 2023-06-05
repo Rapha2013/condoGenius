@@ -1,5 +1,6 @@
 import 'package:condo_genius_beta/pages/login/login.dart';
 import 'package:flutter/material.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 
 void main() {
   runApp(const CondoGenius());
@@ -13,13 +14,14 @@ class CondoGenius extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'CondoGenius',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromRGBO(12, 192, 223, 1),
-        ),
-        useMaterial3: false,
+      home: AnimatedSplashScreen(
+        duration: 3000,
+        splash: Image.asset("assets/condogenius.png"),
+        splashIconSize: double.maxFinite,
+        nextScreen: const Login(),
+        splashTransition: SplashTransition.fadeTransition,
+        backgroundColor: Colors.white,
       ),
-      home: const Login(),
     );
   }
 }
