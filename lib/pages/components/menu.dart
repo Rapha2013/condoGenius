@@ -1,3 +1,5 @@
+import 'package:condo_genius_beta/pages/academia/academia.dart';
+import 'package:condo_genius_beta/pages/denuncias/denuncias.dart';
 import 'package:condo_genius_beta/pages/entrega/entrega.dart';
 import 'package:condo_genius_beta/pages/home.dart';
 import 'package:flutter/material.dart';
@@ -55,8 +57,10 @@ class Menu extends StatelessWidget {
             leading: const Icon(Icons.fitness_center),
             title: const Text('ACADEMIA'), // for Right
             onTap: () {
-              // Update the state of the app.
-              // ...
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Academia()),
+              );
             },
             shape: const Border(
               bottom: BorderSide(
@@ -83,8 +87,10 @@ class Menu extends StatelessWidget {
             leading: const Icon(Icons.report_gmailerrorred),
             title: const Text('DENÚNCIAS'), // for Right
             onTap: () {
-              // Update the state of the app.
-              // ...
+               Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Denuncias()),
+              );
             },
             shape: const Border(
               bottom: BorderSide(
