@@ -109,7 +109,7 @@ class _AcademiaState extends State<Academia> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
                               child: Image.asset(
-                                'assets/avatar_h.png',
+                                'assets/avatar_m.png',
                                 width: 150,
                                 height: 150,
                               ),

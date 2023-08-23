@@ -149,7 +149,7 @@ class _HomePageState extends State<HomePage> {
                                   child: CircleAvatar(
                                     radius: 20,
                                     backgroundImage:
-                                        AssetImage('assets/avatar_h.png'),
+                                        AssetImage('assets/avatar_m.png'),
                                   ),
                                 ),
                                 Padding(
@@ -249,7 +249,7 @@ class _HomePageState extends State<HomePage> {
                                   child: CircleAvatar(
                                     radius: 20,
                                     backgroundImage:
-                                        AssetImage('assets/avatar_h.png'),
+                                        AssetImage('assets/avatar_m.png'),
                                   ),
                                 ),
                                 Padding(

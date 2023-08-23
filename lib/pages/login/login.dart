@@ -35,8 +35,8 @@ class _LoginState extends State<Login> {
                       top: 20,
                     ),
                     child: SizedBox(
-                      width: 220,
-                      height: 220,
+                      width: 200,
+                      height: 200,
                       child: Image.asset("assets/condogenius.png"),
                     ),
                   ),
@@ -121,8 +121,8 @@ class _LoginState extends State<Login> {
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.black,
-                      backgroundColor: Colors.white,
+                      foregroundColor: Colors.white,
+                      backgroundColor: const Color.fromRGBO(12, 192, 223, 1),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -137,14 +137,14 @@ class _LoginState extends State<Login> {
                     child: const Text('LOGIN'),
                   ),
                   const SizedBox(height: 70),
+                  // InkWell(
+                  //   onTap: () {},
+                  //   child: const Text("Esqueci minha senha >"),
+                  // ),
+                  // const SizedBox(height: 10),
                   InkWell(
                     onTap: () {},
-                    child: const Text("Esqueci minha senha >"),
-                  ),
-                  const SizedBox(height: 10),
-                  InkWell(
-                    onTap: () {},
-                    child: const Text("Criar minha conta >"),
+                    child: const Text("Cadastre-se", style: TextStyle(color: Colors.black)),
                   ),
                 ],
               ),

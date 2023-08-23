@@ -14,7 +14,16 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
       duration: 3000,
-      splash: Image.asset("assets/condogenius.png"),
+      splash: Padding(
+        padding: const EdgeInsets.only(
+          top: 20,
+        ),
+        child: SizedBox(
+          width: 200,
+          height: 200,
+          child: Image.asset("assets/condogenius.png"),
+        ),
+      ),
       splashIconSize: double.maxFinite,
       nextScreen: const Login(),
       splashTransition: SplashTransition.fadeTransition,

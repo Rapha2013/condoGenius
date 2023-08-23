@@ -72,7 +72,7 @@ class _DenunciasState extends State<Denuncias> {
                     const Padding(
                       padding: EdgeInsets.all(30),
                       child: Text(
-                        'Denúcias',
+                        'Denúncia',
                         style: TextStyle(
                           decoration: TextDecoration.underline,
                           fontWeight: FontWeight.bold,
@@ -123,7 +123,7 @@ class _DenunciasState extends State<Denuncias> {
                     const Padding(
                       padding: EdgeInsets.all(15.0),
                       child: Text(
-                          '*O Canal é anônimo e suas denúcias serão avaliadas de acordo com a severidade das alegações, para mais informações de segurança consulte a lista de números utilitários.'),
+                          '*O Canal é anônimo e suas denúncias serão avaliadas de acordo com a severidade das alegações, para mais informações de segurança consulte a lista de números utilitários.'),
                     )
                   ],
                 ),
